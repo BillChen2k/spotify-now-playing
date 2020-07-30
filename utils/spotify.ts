@@ -7,6 +7,8 @@ const {
   SPOTIFY_REFRESH_TOKEN: refresh_token,
 } = process.env;
 
+console.log('ENVS:' + process.env);
+
 const basic = Buffer.from(`${client_id}:${client_secret}`).toString("base64");
 const Authorization = `Basic ${basic}`;
 
